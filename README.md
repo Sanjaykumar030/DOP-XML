@@ -47,13 +47,13 @@ The **"X" in DOP-XML** is its most critical feature.
 
 | Phase | Status | Key Objective | Next Milestone |
 |-------|--------|---------------|----------------|
-| 1. Data Annotation & Curation | 🟡 In-Progress | Curate a high-fidelity, version-controlled dataset of video content labeled for dopaminergic stimulation levels. | Complete initial 750-1,000 sample dataset for baseline modeling. |
+| 1. Data Annotation & Curation | 🟡 In-Progress | Curate a high-fidelity, version-controlled dataset of video content labeled for dopaminergic stimulation levels. | Complete initial 500-750 sample dataset for baseline modeling. |
 | 2. Data Engineering Pipeline | 🟡 In-Progress | Build a robust, automated pipeline to preprocess and prepare video/metadata for model ingestion. | Finalize feature extraction script for YouTube metadata. |
 | 3. Iterative Model Training | 🟡 In-Progress | Develop and train a classification model, systematically improving accuracy from 89% to a target of >93%. | Implement hyperparameter tuning using Optuna. |
-| 4. YouTube API Integration | ⚪ Pending | Engineer a resilient, rate-limited connector to fetch real-time data from the YouTube API securely. | Secure API credentials and build the initial fetch function. |
+| 4. YouTube API Integration | 🟢 Completed | Engineer a resilient, rate-limited connector to fetch real-time data from the YouTube API securely. | Secure API credentials and build the initial fetch function. |
 | 5. Backend Service & MLOps | ⚪ Pending | Containerize the model into a scalable microservice using Docker and expose it via a high-performance FastAPI. | Draft initial API endpoints and data validation schemas. |
-| 6. API Definition & Documentation | ⚪ Pending | Define a stable, versioned API contract (`/api/v1`) with auto-generated interactive documentation. | Finalize the `/predict` endpoint request/response model. |
-| 7. Frontend UI/UX & Integration | 🟡 Designing | Develop a responsive, intuitive React frontend for data visualization and user interaction. | Build the first functional prototype for API connection. |
+| 6. API Definition & Documentation | 🟡 In-Progress | Define a stable, versioned API contract (`/api/v1`) with auto-generated interactive documentation. | Finalize the `/predict` endpoint request/response model. |
+| 7. Frontend UI/UX & Integration | 🟡 Final Testing | Develop a responsive, intuitive React frontend for data visualization and user interaction. | Build the first functional prototype for API connection. |
 
 ---
 
