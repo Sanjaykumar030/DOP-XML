@@ -75,6 +75,24 @@ DOP-XML acts as a **counterbalance** — transforming passive screen time into a
 | **0** | 0.90      | 0.94   | 0.92     | 50      |
 | **1** | 0.94      | 0.90   | 0.92     | 50      |
 
+# 📊 Dataset Schema
+
+| Column Name           | Description                                                   | Citation |
+|-----------------------|---------------------------------------------------------------|----------|
+| `video_id`            | YouTube video identifier                                      | Malik, H. (2017). *A Framework for Collecting YouTube Meta-Data.* Procedia Computer Science. ScienceDirect |
+| `channel_name`        | Channel name                                                  | Yang, S. (2022). *The science of YouTube: What factors influence user engagement with online science videos?* PMC |
+| `video_title`         | Title of the video                                            | Giankos, E., Giannakopoulos, N. T., & Sakas, D. P. (2025). *Optimizing YouTube Video Visibility and Engagement: The Impact of Keywords on Fisheries’ Product Campaigns in the Supply Chain Sector.* MDPI |
+| `freq_cut_per_video`  | Binary flag for frequent cuts (1 if present, 0 if absent)    | Halim, Z. (2022). *Identifying content unaware features influencing popularity of YouTube videos.* Computers in Industry. ScienceDirect |
+| `video_duration_sec`  | Duration of the video in seconds                               | Shaikh, A. R. (2022). *YouTube and science: models for research impact.* PLOS ONE. PMC |
+| `dominant_color`      | Dominant frame color (categorical)                             | Le, T. (2025). *EnTube: Exploring key video features for advancing video recommendation.* Procedia Computer Science. ScienceDirect |
+| `view_count`          | Total number of views                                         | Yang, S. (2022). *The science of YouTube: What factors influence user engagement with online science videos?* PMC |
+| `title_word_count`    | Number of words in the video title                             | Giankos, E., Giannakopoulos, N. T., & Sakas, D. P. (2025). *Optimizing YouTube Video Visibility and Engagement: The Impact of Keywords on Fisheries’ Product Campaigns in the Supply Chain Sector.* MDPI |
+| `video_category`      | YouTube category label                                        | Halim, Z. (2022). *Identifying content unaware features influencing popularity of YouTube videos.* Computers in Industry. ScienceDirect |
+| `is_for_kids`         | Boolean indicating child-targeted content                     | Giankos, E., Giannakopoulos, N. T., & Sakas, D. P. (2025). *Optimizing YouTube Video Visibility and Engagement: The Impact of Keywords on Fisheries’ Product Campaigns in the Supply Chain Sector.* MDPI |
+| `date_published`      | Publication date (DD-MM-YYYY)                                 | Halim, Z. (2022). *Identifying content unaware features influencing popularity of YouTube videos.* Computers in Industry. ScienceDirect |
+| `key_dopamine_factor` | Dominant dopamine feature (e.g., “jingles”, “flashing”)       | Yang, S. (2022). *The science of YouTube: What factors influence user engagement with online science videos?* PMC |
+| `dopamine_label`      | 1 if dopamine-triggering, else 0                               | Shaikh, A. R. (2022). *YouTube and science: models for research impact.* PLOS ONE. PMC |
+
 [Dataset Created & Used For Training](https://github.com/Sanjaykumar030/DOP-XML/blob/main/Dopamine_Data.xlsx)
 
 
