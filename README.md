@@ -59,9 +59,9 @@ DOP-XML acts as a **counterbalance** — transforming passive screen time into a
 | **2. Data Engineering Pipeline** | ✅ Completed | Automated pipeline for preprocessing video/metadata. | Optimize feature extraction scripts. |
 | **3. Iterative Model Training** | ✅ Completed | Trained CatBoost classifier, improving accuracy from 89% → **92%**. | Advanced tuning with Optuna. |
 | **4. YouTube API Integration** | ✅ Completed | Built resilient connector to fetch real-time video metadata. | Strengthen error handling & scaling. |
-| **5. Backend Service, AI, MLOps & SQL** | ✅ Completed | Containerized model via Flask & deployed microservice. Integrated DeepSeek AI for advanced reasoning. | Expand endpoint validation. Added SQL for tracking history and manipulating data |
-| **6. API Definition & Documentation** | 🟡 In Progress | Defined stable `/api/v1` contract with interactive docs. | Finalize `/predict` request/response schema. |
-| **7. Frontend UI/UX & Integration** | 🟡 Final Testing | Built responsive React interface for user/advanced modes. | Release fully functional prototype. |
+| **5. Backend Service, MLOps & SQL** | ✅ Completed | Containerized model via Flask & deployed microservice.| Expand endpoint validation. Added SQL for tracking history and manipulating data |
+| **6. API Definition & Documentation** | ✅ Completed | Defined stable `/api/v1` contract with interactive docs. | Finalize `/predict` request/response schema. |
+| **7. Frontend UI/UX & Integration** | ✅ Completed | Built responsive React interface for user/advanced modes. | Release fully functional prototype. |
 
 ---
 
@@ -104,12 +104,13 @@ DOP-XML acts as a **counterbalance** — transforming passive screen time into a
 
 **Machine Learning & Backend:**  
 - Python, Scikit-learn, CatBoost  
-- Flask (API service), Weights & Biases (tracking)  
+- Flask (API service), Weights & Biases (tracking)
+- Git, Github
 
 **Frontend & UI/UX:**  
 - React, Tailwind CSS  
 - Figma (visualizations)
--   
+  
 
 **Data & Infrastructure:**  
 - SQLite (lightweight DB)  
