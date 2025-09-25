@@ -1,73 +1,106 @@
-# DOP-XML: An Explainable AI Guardian for Digital Dopamine Regulation 🚀
-
-**Our Mission:**  
-To build an **ambient health guardian** that mitigates the risks of digital dopamine hyper-stimulation in children through **explainable, real-time AI insights**.
+#  DOP-XML: An Explainable AI Guardian for Digital Dopamine Regulation 🚀
 
 ---
 
-## The Vision: Answering the Call for an "Ambient Health Guardian"
+## 🎯 Our Mission
+To build an **ambient health guardian** that mitigates the risks of **digital dopamine hyper-stimulation in children** through **explainable, real-time AI insights**.
 
-> "Health isn’t limited to hospitals or apps; it lives in our everyday choices...  
-> What if there were a guardian that quietly walked beside us, nudging us toward better health without demanding our attention? Envision what that guardian could be."
+---
+
+## 🌍 The Vision: Answering the Call for an "Ambient Health Guardian"
+> *"Health isn’t limited to hospitals or apps; it lives in our everyday choices...  
+> What if there were a guardian that quietly walked beside us, nudging us toward better health without demanding our attention? Envision what that guardian could be."*
 
 **DOP-XML is that guardian.**  
 
-In an era where digital platforms are engineered for maximum engagement, we are engineering a **counterbalance**: a system designed to protect and nurture the **cognitive health of the next generation**.  
-We are turning **passive screen time** into an **actively monitored environment** for healthy development.
+In today’s digital age, platforms are engineered for **maximum engagement**, often at the cost of cognitive health.  
+DOP-XML acts as a **counterbalance** — transforming passive screen time into an **actively monitored, explainable, and healthier environment** for children’s development.  
 
 ---
 
-## Core Pillars & Innovations
-
-What makes DOP-XML a winning solution is its foundation on **three critical pillars**:
+## ⚡ Core Pillars & Innovations
 
 ### 🧠 Explainable AI (XAI) Core
-The **"X" in DOP-XML** is its most critical feature.  
-- We don't just provide a risk score; we provide **answers**.  
-- Using techniques like **SHAP** and **LIME**, our system explains **why** it flags certain content or patterns.  
-- Empowers parents and educators with **actionable, understandable insights** instead of black-box alarms.
-
-### 🚀 Real-Time Nudging Engine
-- The backend isn't just a passive analysis tool.  
-- It actively provides gentle, **"ambient" nudges**:  
-  - Suggest breaks  
-  - Recommend alternative content  
-  - Encourage offline activities  
-- Helps **preemptively curb hyper-stimulation** before it becomes problematic.
-
-### 🔒 Privacy-Centric by Design
-- Built with a **privacy-first mindset**, essential for applications involving children.  
-- Roadmap prioritizes architectures that **minimize data liability**:  
-  - Future plans for **on-device processing**  
-  - **Federated learning** to ensure **user data remains secure**.
+- The **"X" in DOP-XML** represents **explainability**.  
+- Goes beyond risk scores — it **explains why** content is flagged.  
+- Uses **SHAP** and **LIME** to highlight triggers like:  
+  - Bright colors  
+  - Repetitive music  
+  - Fast visual cuts  
+- Provides **transparent, actionable insights** for parents & educators.
 
 ---
 
-## Project Roadmap & Live Status
+### 🚀 Real-Time Nudging Engine
+- Moves beyond passive analysis → provides **ambient, real-time nudges**.  
+- Nudges may include:  
+  - Suggesting breaks  
+  - Recommending alternative content  
+  - Encouraging offline activities  
+- Acts as a **digital co-pilot** that reduces overstimulation *before it becomes harmful*.  
+
+---
+
+### 🔒 Privacy-Centric by Design
+- Built with a **child-first privacy mindset**.  
+- Roadmap emphasizes:  
+  - **Minimal data liability**  
+  - **On-device processing** (future scope)  
+  - **Federated learning** for enhanced security  
+- Ensures sensitive user data stays **safe and private**.  
+
+---
+
+## 🛠️ Project Roadmap & Live Status
 
 | Phase | Status | Key Objective | Next Milestone |
 |-------|--------|---------------|----------------|
-| 1. Data Annotation & Curation | 🟢 Completed | Curate a high-fidelity, version-controlled dataset of video content labeled for dopaminergic stimulation levels. | Complete initial 500-600 sample dataset for baseline modeling. |
-| 2. Data Engineering Pipeline | 🟢 Completed | Build a robust, automated pipeline to preprocess and prepare video/metadata for model ingestion. | Finalize feature extraction script for YouTube metadata. |
-| 3. Iterative Model Training | 🟢 Completed | Develop and train a classification model, systematically improving accuracy from 89% to a target of >93%. | Implement hyperparameter tuning using Optuna. |
-| 4. YouTube API Integration | 🟢 Completed | Engineer a resilient, rate-limited connector to fetch real-time data from the YouTube API securely. | Secure API credentials and build the initial fetch function. |
-| 5. Backend Service, AI & MLOps | 🟢 Completed | Containerize the model into a scalable microservice and expose it via a high-performance FlashAPI. | Draft initial API endpoints and data. Deepseek AI addition and validation schemas. |
-| 6. API Definition & Documentation | 🟡 In-Progress | Define a stable, versioned API contract (`/api/v1`) with auto-generated interactive documentation. | Finalize the `/predict` endpoint request/response model. |
-| 7. Frontend UI/UX & Integration | 🟡 Final Testing | Develop a responsive, intuitive React frontend for data visualization and user interaction. | Build the first functional prototype for API connection. |
+| **1. Data Annotation & Curation** | ✅ Completed | Curated a high-fidelity dataset of 500–600 videos, labeled for dopamine stimulation. | Expand dataset for broader generalization. |
+| **2. Data Engineering Pipeline** | ✅ Completed | Automated pipeline for preprocessing video/metadata. | Optimize feature extraction scripts. |
+| **3. Iterative Model Training** | ✅ Completed | Trained CatBoost classifier, improving accuracy from 89% → **92%**. | Advanced tuning with Optuna. |
+| **4. YouTube API Integration** | ✅ Completed | Built resilient connector to fetch real-time video metadata. | Strengthen error handling & scaling. |
+| **5. Backend Service, AI & MLOps** | ✅ Completed | Containerized model via Flask & deployed microservice. Integrated DeepSeek AI for advanced reasoning. | Expand endpoint validation. |
+| **6. API Definition & Documentation** | 🟡 In Progress | Defined stable `/api/v1` contract with interactive docs. | Finalize `/predict` request/response schema. |
+| **7. Frontend UI/UX & Integration** | 🟡 Final Testing | Built responsive React interface for user/advanced modes. | Release fully functional prototype. |
 
 ---
 
-## Technology Stack
+## 📊 Model Metrics (CatBoost Classifier)
+
+- **Accuracy:** `0.9200`  
+- **ROC AUC:** `0.9664`  
+
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| **0** | 0.90      | 0.94   | 0.92     | 50      |
+| **1** | 0.94      | 0.90   | 0.92     | 50      |
+
+[Dataset Created & Used For Training](https://github.com/Sanjaykumar030/DOP-XML/blob/main/Dopamine_Data.xlsx)
+
+
+> ✅ Balanced performance across both classes, ensuring reliability.
+
+---
+
+## 🖥️ Technology Stack
 
 **Machine Learning & Backend:**  
-Python,  Scikit-learn, CatBoost, Weights & Biases, Flask
+- Python, Scikit-learn, CatBoost  
+- Flask (API service), Weights & Biases (tracking)  
 
 **Frontend & UI/UX:**  
-React, Tailwind CSS 
+- React, Tailwind CSS  
+- Figma (visualizations)
+-   
 
 **Data & Infrastructure:**  
-DVC (Data Version Control), SQLite, Google Cloud Run (Target for deployment)
+- SQLite (lightweight DB)  
+- Google Cloud Run (YouTube API service)
+- OpenRouter (Deepseek API service)  
 
 ---
 
-> ⚡ *DOP-XML is not just a model — it’s your intelligent guardian, quietly guiding safer digital interactions for the next generation.*
+## 🌟 Closing Note
+⚡ *DOP-XML is not just a model — it is an **intelligent digital guardian** that quietly ensures healthier interactions with technology, shaping a safer digital future for the next generation.*  
+
+---
