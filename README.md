@@ -47,11 +47,11 @@ The **"X" in DOP-XML** is its most critical feature.
 
 | Phase | Status | Key Objective | Next Milestone |
 |-------|--------|---------------|----------------|
-| 1. Data Annotation & Curation | 🟡 In-Progress | Curate a high-fidelity, version-controlled dataset of video content labeled for dopaminergic stimulation levels. | Complete initial 500-750 sample dataset for baseline modeling. |
-| 2. Data Engineering Pipeline | 🟡 In-Progress | Build a robust, automated pipeline to preprocess and prepare video/metadata for model ingestion. | Finalize feature extraction script for YouTube metadata. |
-| 3. Iterative Model Training | 🟡 In-Progress | Develop and train a classification model, systematically improving accuracy from 89% to a target of >93%. | Implement hyperparameter tuning using Optuna. |
+| 1. Data Annotation & Curation | 🟢 Completed | Curate a high-fidelity, version-controlled dataset of video content labeled for dopaminergic stimulation levels. | Complete initial 500-600 sample dataset for baseline modeling. |
+| 2. Data Engineering Pipeline | 🟢 Completed | Build a robust, automated pipeline to preprocess and prepare video/metadata for model ingestion. | Finalize feature extraction script for YouTube metadata. |
+| 3. Iterative Model Training | 🟢 Completed | Develop and train a classification model, systematically improving accuracy from 89% to a target of >93%. | Implement hyperparameter tuning using Optuna. |
 | 4. YouTube API Integration | 🟢 Completed | Engineer a resilient, rate-limited connector to fetch real-time data from the YouTube API securely. | Secure API credentials and build the initial fetch function. |
-| 5. Backend Service & MLOps | 🟡 Final Testing | Containerize the model into a scalable microservice and expose it via a high-performance FlashAPI. | Draft initial API endpoints and data. Deepseek AI addition and validation schemas. |
+| 5. Backend Service, AI & MLOps | 🟢 Completed | Containerize the model into a scalable microservice and expose it via a high-performance FlashAPI. | Draft initial API endpoints and data. Deepseek AI addition and validation schemas. |
 | 6. API Definition & Documentation | 🟡 In-Progress | Define a stable, versioned API contract (`/api/v1`) with auto-generated interactive documentation. | Finalize the `/predict` endpoint request/response model. |
 | 7. Frontend UI/UX & Integration | 🟡 Final Testing | Develop a responsive, intuitive React frontend for data visualization and user interaction. | Build the first functional prototype for API connection. |
 
@@ -60,13 +60,13 @@ The **"X" in DOP-XML** is its most critical feature.
 ## Technology Stack
 
 **Machine Learning & Backend:**  
-Python,  Scikit-learn, Weights & Biases, Docker, Flask
+Python,  Scikit-learn, CatBoost, Weights & Biases, Flask
 
 **Frontend & UI/UX:**  
-React, Tailwind CSS, Recharts (for data visualization), TanStack Query  
+React, Tailwind CSS 
 
 **Data & Infrastructure:**  
-DVC (Data Version Control), PostgreSQL, Google Cloud Run (Target for deployment)
+DVC (Data Version Control), SQLite, Google Cloud Run (Target for deployment)
 
 ---
 
